@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import styles from './App.module.css'
+import { _App } from './App.module.css'
 import { generateData } from './__test_data.js'
 import { throttle } from './schedule.js'
 
@@ -42,7 +42,7 @@ export default function (props) {
     const tableStyle = { width: TABLE_WIDTH + 'px', paddingLeft: (passedCount * TD_WIDTH) + 'px', }
 
     return (
-        <div className={styles._App} onScroll={handleScroll}>
+        <div className={_App} onScroll={handleScroll}>
             <table style={tableStyle}>
                 <tbody>
                 <DataRow start={passedCount}/>

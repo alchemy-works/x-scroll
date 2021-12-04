@@ -2,18 +2,20 @@
   "name": "x-scroll",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "snowpack dev --config ./snowpack.config.js",
-    "build": "snowpack build --config ./snowpack.config.js"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "clean": "rm -rf dist .parcel-cache"
   },
   "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "snowpack": "^3.8.8"
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
   }
 }
